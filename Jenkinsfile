@@ -4,6 +4,10 @@ pipeline{
 
     agent any
     //agent { label 'Demo' }
+    tools {
+    // Make sure the name here matches what you named the Maven installation in Jenkins' global tool configuration
+    maven 'Maven 3.9.6'
+    }
 
     parameters{
 
